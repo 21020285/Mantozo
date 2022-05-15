@@ -20,8 +20,8 @@ bool InitData(){
       }
       else{
         SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
-        int imgFlags = IMG_INIT_PNG;
-        if (!(IMG_Init(imgFlags) && imgFlags)) sucess = false;
+        int imgFlags = IMG_INIT_PNG; //wrong here
+        if (!(IMG_Init(imgFlags) && imgFlags)) sucess = false; //wrong here
       }
     }
    return sucess;
